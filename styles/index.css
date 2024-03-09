@@ -1,0 +1,59 @@
+/* *Navigation Bar and Menu */
+.logo {
+  width: 170px;
+  margin: 0 1rem;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-bottom: var(--black) 2px solid;
+}
+
+.nav-links a {
+  padding: 1.8rem;
+  font-weight: 500;
+}
+
+.nav-links a:last-child {
+  border-left: var(--black) 2px solid;
+  background-color: var(--yellow);
+}
+
+.nav-links a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* *Hero Section Styles */
+.hero {
+  background-color: var(--blue);
+  flex-direction: column;
+}
+
+.hero-text {
+  margin-top: 3rem;
+}
+
+.hero-text h1,
+.hero-text h5{
+  text-align: center;
+  margin: 1.8rem;
+}
+
+.hero-text h5 {
+  line-height: 1.8rem;
+}

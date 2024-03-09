@@ -1,0 +1,75 @@
+/* *Clash Display Font by Indian Type Foundry under the ITF license. */
+@import url('clash-display.css');
+
+:root {
+  /* ?Color Palette */
+  --black: #000;
+  --white: #fff;
+  --green: #00EB90;
+  --pink: #FF73A9;
+  --yellow: #FFDC00;
+  --blue: #3F5EF4;
+}
+
+
+/* *General Style Reset and Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {font-size: 4.210rem; font-weight: 600;}
+
+h2 {font-size: 3.158rem;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}
+
+h5 {font-size: 1.333rem; font-weight: 450;}
+
+small {font-size: 0.750rem;}
+
+body {
+  font-size: 100%;
+  font-family: 'ClashDisplay-Variable', fallback, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* *Reusable Styles and Components */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-panel {
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 2px solid var(--black);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 500;
+  border: 2px solid var(--black);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
+}
+
+.btn:hover {
+  background-color: var(--yellow);
+  box-shadow: 6px 6px 0 var(--black);
+  transform: translate(-6px, -6px); 
+}
