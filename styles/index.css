@@ -19,28 +19,28 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
+  background-color: var(--black);
   border-bottom: var(--black) 2px solid;
 }
 
 .nav-links a {
   padding: 1.8rem;
   font-weight: 500;
+  color: var(--white)
 }
 
 .nav-links a:last-child {
   border-left: var(--black) 2px solid;
-  background-color: var(--yellow);
 }
 
 .nav-links a:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* *Hero Section Styles */
 .hero {
-  background-color: var(--blue);
+  background-color: #f1efd9;
   flex-direction: column;
 }
 
@@ -51,7 +51,7 @@ nav {
 .hero-text h1,
 .hero-text h5{
   text-align: center;
-  margin: 1.8rem;
+  margin-bottom: 1.8rem;
 }
 
 .hero-text h5 {

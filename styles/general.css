@@ -58,7 +58,7 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2.5rem;
   background-color: var(--white);
   color: var(--black);
   font-weight: 500;
@@ -73,3 +73,133 @@ a {
   box-shadow: 6px 6px 0 var(--black);
   transform: translate(-6px, -6px); 
 }
+
+.loader {
+  position: fixed;
+  top: -1%;
+  left: -1%;
+  right: -1%;
+  bottom: -1%;
+  z-index: 99999;
+  background-color: #f1efd9; }
+  .loader .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'ClashDisplay-Regular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-variation-settings: "wght" 560, "wdth" 170, "ital" 50;
+    font-size: 4.16667em;
+    /* -- @include break(mobile)-- */
+    color: #A238FF;
+    -webkit-animation: txtAnim 4s 0.5s linear infinite;
+            animation: txtAnim 4s 0.5s linear infinite;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+    @supports (font-variation-settings: normal) {
+      .loader .txt {
+        font-family: 'ClashDisplay-Variable', Arial, Helvetica, sans-serif;
+        font-weight: normal; } }
+    @media only screen and (max-width: 768px) {
+      .loader .txt {
+        font-size: 2.08333em; } }
+
+.transition {
+  position: fixed;
+  top: -1%;
+  left: -1%;
+  right: -1%;
+  bottom: -1%;
+  z-index: 99999;
+  background-color: #EFEFEF;
+  display: none; }
+  .transition .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'ClashDisplay-Regular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-variation-settings: "wght" 560, "wdth" 170, "ital" 50;
+    font-size: 4.16667em;
+    /* -- @include break(mobile)-- */
+    color: #232323;
+    -webkit-animation: txtAnimT 4s 0.2s linear infinite;
+            animation: txtAnimT 4s 0.2s linear infinite;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    white-space: nowrap; }
+    @supports (font-variation-settings: normal) {
+      .transition .txt {
+        font-family: 'ClashDisplay-Variable', Arial, Helvetica, sans-serif;
+        font-weight: normal; } }
+    @media only screen and (max-width: 768px) {
+      .transition .txt {
+        font-size: 2.08333em; } }
+
+@keyframes txtAnim {
+  0% {
+    font-variation-settings: "wght" 560, "wdth" 170, "ital" 50;
+    color: #A238FF; }
+  15% {
+    font-variation-settings: "wght" 560, "wdth" 170, "ital" 50;
+    color: #A238FF; }
+  20% {
+    font-variation-settings: "wght" 560, "wdth" 70, "ital" 50;
+    color: #23D78C; }
+  35% {
+    font-variation-settings: "wght" 560, "wdth" 70, "ital" 50;
+    color: #23D78C; }
+  40% {
+    font-variation-settings: "wght" 440, "wdth" 120, "ital" 0;
+    color: #FF1E0A; }
+  55% {
+    font-variation-settings: "wght" 440, "wdth" 120, "ital" 0;
+    color: #FF1E0A; }
+  60% {
+    font-variation-settings: "wght" 310, "wdth" 25, "ital" 0;
+    color: #FFD700; }
+  75% {
+    font-variation-settings: "wght" 310, "wdth" 25, "ital" 0;
+    color: #FFD700; }
+  80% {
+    font-variation-settings: "wght" 440, "wdth" 70, "ital" 50;
+    color: #2346DC; }
+  95% {
+    font-variation-settings: "wght" 440, "wdth" 70, "ital" 50;
+    color: #2346DC; }
+  100% {
+    font-variation-settings: "wght" 560, "wdth" 170, "ital" 50;
+    color: #A238FF; } }
+
+  @keyframes txtAnimT {
+      0% {
+        font-variation-settings: "wght" 560, "wdth" 170, "ital" 50; }
+      15% {
+        font-variation-settings: "wght" 560, "wdth" 170, "ital" 50; }
+      20% {
+        font-variation-settings: "wght" 560, "wdth" 70, "ital" 50; }
+      35% {
+        font-variation-settings: "wght" 560, "wdth" 70, "ital" 50; }
+      40% {
+        font-variation-settings: "wght" 440, "wdth" 120, "ital" 0; }
+      55% {
+        font-variation-settings: "wght" 440, "wdth" 120, "ital" 0; }
+      60% {
+        font-variation-settings: "wght" 310, "wdth" 25, "ital" 0; }
+      75% {
+        font-variation-settings: "wght" 310, "wdth" 25, "ital" 0; }
+      80% {
+        font-variation-settings: "wght" 440, "wdth" 70, "ital" 50; }
+      95% {
+        font-variation-settings: "wght" 440, "wdth" 70, "ital" 50; }
+      100% {
+        font-variation-settings: "wght" 560, "wdth" 170, "ital" 50; } }
+    
